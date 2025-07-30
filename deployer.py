@@ -148,6 +148,7 @@ while task.info.state == vim.TaskInfo.State.running:
 
 if task.info.state == vim.TaskInfo.State.success:
     print("✅ VM successfully cloned and powered on.")
+    time.sleep(3)
 else:
     print("❌ Clone failed.")
     if task.info.error:
